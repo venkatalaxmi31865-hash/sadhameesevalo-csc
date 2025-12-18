@@ -1,0 +1,133 @@
+# This is a ba<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sadha MeeSevalo CSC Point</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+}
+header {
+    background: #0b5ed7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 8px;
+}
+h2 {
+    color: #0b5ed7;
+}
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Sadha MeeSevalo CSC Point</h1>
+    <p>ప్రభుత్వ సేవలు మీ దగ్గరే | Government Services at Your Doorstep</p>
+</header>
+
+<section>
+    <h2>About Us | మా గురించి</h2>
+    <p>
+        Sadha MeeSevalo CSC Point ద్వారా అన్ని రకాల ప్రభుత్వ మరియు ఆన్‌లైన్ సేవలు
+        నమ్మకంగా అందించబడతాయి.
+    </p>
+    <p>
+        We provide all Government and CSC services in a fast, reliable, and affordable way.
+    </p>
+</section>
+
+<section>
+    <h2>Services | సేవలు</h2>
+    <ul>
+        <li>Aadhaar Services | ఆధార్ సేవలు</li>
+        <li>PAN Card | పాన్ కార్డు</li>
+        <li>MeeSeva Services | మీ సేవ</li>
+        <li>Banking & AEPS | బ్యాంకింగ్ & AEPS</li>
+        <li>Insurance Services | బీమా సేవలు</li>
+        <li>Government Schemes | ప్రభుత్వ పథకాలు</li>
+        <li>Online Applications | ఆన్‌లైన్ దరఖాస్తులు</li>
+        <li>All CSC Services | అన్ని CSC సేవలు</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Contact Us | సంప్రదించండి</h2>
+    <p><strong>Name:</strong> Laxmi</p>
+    <p><strong>Mobile:</strong> 7569309626</p>
+    <p>
+        <strong>Address:</strong><br>
+        Peraigudem,<br>
+        Aswaraopeta Mandalam,<br>
+        Bhadradri Kothagudem District
+    </p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/917569309626" target="_blank">💬</a>
+
+<footer>
+    <p>© 2025 Sadha MeeSevalo CSC Point</p>
+</footer>
+
+</body>
+</html>sic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
